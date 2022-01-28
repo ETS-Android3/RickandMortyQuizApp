@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="mpb_shirt">#abfbf2</color>
+    <color name="mpb_skin">#fcf3ae</color>
+
+    <color name="rfd_door">#bd8643</color>
+    <color name="rfd_grey">#9a977b</color>
+    <color name="rfd_blue">#b5e5e7</color>
+
+    <color name="dark_purple">#310a31</color>
+    <color name="rhythm">#847996</color>
+    <color name="green_sheen">#88b7b5</color>
+    <color name="cambridge_blue">#a7cab1</color>
+    <color name="eggshell">#f4ecd6</color>
+    <color name="dark_spring_green">#137547</color>
+    <color name="yellow_orange_color_wheel">#FE9920</color>
+    <color name="cardinal">#C52233</color>
+</resources>

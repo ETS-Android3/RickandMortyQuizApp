@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:background="@color/rhythm"
+    tools:context=".NewMemberActivity">
+
+    <TextView
+        android:id="@+id/welcome_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_message"
+        android:textSize="20sp"
+        android:textColor="@color/eggshell"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/name_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name_label"
+        android:textSize="16sp"
+        android:textColor="@color/eggshell"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcome_txt"
+        app:layout_constraintEnd_toStartOf="@id/name_edittxt"
+        app:layout_constraintBottom_toBottomOf="@id/name_edittxt"/>
+
+    <EditText
+        android:id="@+id/name_edittxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/name_hint"
+        android:textSize="16sp"
+        android:textColor="@color/eggshell"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@id/name_lbl"
+        app:layout_constraintTop_toBottomOf="@id/welcome_txt"
+        app:layout_constraintBottom_toBottomOf="@id/name_lbl"/>
+
+    <Button
+        android:id="@+id/getImage"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/get_image_button"
+        android:textAllCaps="false"
+        android:background="@drawable/custom_button_main"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name_lbl"/>
+
+    <ImageView
+        android:id="@+id/preview"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/content_description_new_member"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/getImage"/>
+    
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/preview"
+        app:layout_constraintBottom_toTopOf="@id/upload"/>
+
+
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/upload_image_button"
+        android:background="@drawable/custom_button_main"
+        android:textAllCaps="false"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/progress_bar"/>
+
+    <TextView
+        android:id="@+id/error_message_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/cardinal"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/upload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/progress_bar"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

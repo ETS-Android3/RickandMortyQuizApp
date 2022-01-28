@@ -1,0 +1,70 @@
+{
+  "project_info": {
+    "project_number": "847783751490",
+    "firebase_url": "https://rick-and-morty-character-quiz.firebaseio.com",
+    "project_id": "rick-and-morty-character-quiz",
+    "storage_bucket": "rick-and-morty-character-quiz.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:847783751490:android:a1730a8daed8b2895e22db",
+        "android_client_info": {
+          "package_name": "com.atuvwapps.rickandmortyultimatecharacterquiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "847783751490-vqa0ldi79tq55vfl01lvlpesa2bm3tmc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAq1Cdt3Hht3hb9I0mIVmLqiy6jcOuvbjk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "847783751490-vqa0ldi79tq55vfl01lvlpesa2bm3tmc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:847783751490:android:a4a3fb0100c7c1b15e22db",
+        "android_client_info": {
+          "package_name": "com.example.rickandmortyultimatecharacterquiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "847783751490-vqa0ldi79tq55vfl01lvlpesa2bm3tmc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAq1Cdt3Hht3hb9I0mIVmLqiy6jcOuvbjk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "847783751490-vqa0ldi79tq55vfl01lvlpesa2bm3tmc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-9947093933147812~6405114997"
+    }
+  ],
+  "configuration_version": "1"
+}

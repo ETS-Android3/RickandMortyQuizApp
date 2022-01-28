@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rhythm"
+    tools:context=".GameoverActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/game_over_title"
+        android:textAllCaps="true"
+        android:textSize="48sp"
+        android:textColor="@color/eggshell"
+        android:id="@+id/game_over_header_tv"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/your_score_txt"
+        android:text="@string/your_score"
+        android:textSize="32sp"
+        android:textColor="@color/eggshell"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/game_over_header_tv"/>
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:id="@+id/final_score_txt"
+        android:textSize="80sp"
+        android:textColor="@color/eggshell"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:background="@drawable/custom_score_txt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/your_score_txt"
+        app:layout_constraintBottom_toTopOf="@id/playAgainBtn"/>
+
+
+    <Button
+        android:id="@+id/playAgainBtn"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:text="@string/play_again_btn"
+        android:background="@drawable/custom_button_main"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@id/mainMenuBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/mainMenuBtn"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:text="@string/menu_btn"
+        android:background="@drawable/custom_button_main"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

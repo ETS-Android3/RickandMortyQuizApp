@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">R &amp; M Ultimate Character Quiz</string>
+    <string name="start_btn">Start</string>
+    <string name="club100_btn">The 100 Club</string>
+    <string name="rate_btn">Rate</string>
+    <string name="contentDescription">Rick and Morty character image</string>
+    <string name="score_label">Score</string>
+    <string name="lives_label">Lives</string>
+    <string name="starting_score">0</string>
+    <string name="test_question">If you could be any member of the vindicators, who would it be?</string>
+
+    <string name="menu_btn">Main Menu</string>
+    <string name="play_again_btn">Play Again</string>
+    <string name="network_error">Network error, check connection.</string>
+    <string name="game_over_title">Game Over</string>
+    <string name="your_score">Your score was: </string>
+
+    <string name="welcome_message">Congrats on completing the game! Please enter your name and add a pic
+        below so we can add you to the hall of fame in the 100 Club!</string>
+    <string name="name_label">Name: </string>
+    <string name="name_hint">Please Enter Name Here</string>
+    <string name="get_image_button">Choose Image</string>
+    <string name="upload_image_button">Add To Club</string>
+    <string name="content_description_new_member">Image of new member</string>
+
+    <string name="one_hundred_club_title">100 Club : Hall Of Fame</string>
+    <string name="one_hundred_club_sub_header">Celebrating players who reached a score of 100</string>
+
+    <string name="new_member_name_length_error">*Name must be 25 characters or less</string>
+    <string name="new_member_pic_empty_error">*Please add a pic</string>
+</resources>

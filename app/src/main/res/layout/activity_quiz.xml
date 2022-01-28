@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rhythm">
+
+    <ImageView
+        android:id="@+id/questionImgBackground"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:background="@color/dark_purple"
+        android:contentDescription="@string/contentDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/questionImg"
+        android:layout_width="245dp"
+        android:layout_height="245dp"
+        android:src="@mipmap/title_image_foreground"
+        android:contentDescription="@string/contentDescription"
+        android:paddingTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/score_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_score_txt"
+        android:gravity="center"
+        android:text="@string/starting_score"
+        android:textAlignment="center"
+        android:textColor="@color/eggshell"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@id/questionImg"
+        app:layout_constraintEnd_toStartOf="@id/questionImg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lives_three_txt"
+        android:background="@drawable/custom_lives_three"
+        app:layout_constraintBottom_toTopOf="@id/lives_two_txt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/questionImg"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lives_two_txt"
+        android:background="@drawable/custom_lives_three"
+        app:layout_constraintBottom_toTopOf="@id/lives_one_txt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/questionImg"
+        app:layout_constraintTop_toBottomOf="@id/lives_three_txt"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lives_one_txt"
+        android:background="@drawable/custom_lives_three"
+        app:layout_constraintBottom_toBottomOf="@id/questionImg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/questionImg"
+        app:layout_constraintTop_toBottomOf="@id/lives_two_txt"/>
+
+    <TextView
+        android:id="@+id/questionTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/test_question"
+        android:textSize="24sp"
+        android:textColor="@color/eggshell"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/answer1Btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionImg" />
+
+
+    <Button
+        android:id="@+id/answer1Btn"
+        android:layout_width="160dp"
+        android:layout_height="90dp"
+        android:textAllCaps="false"
+        android:textColor="@color/eggshell"
+        android:background="@drawable/custom_button_main"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/answer3Btn"
+        app:layout_constraintEnd_toStartOf="@+id/answer2Btn"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/answer2Btn"
+        android:layout_width="160dp"
+        android:layout_height="90dp"
+        android:textAllCaps="false"
+        android:textColor="@color/eggshell"
+        android:background="@drawable/custom_button_main"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/answer4Btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/answer1Btn" />
+
+
+    <Button
+        android:id="@+id/answer3Btn"
+        android:layout_width="160dp"
+        android:layout_height="90dp"
+        android:textAllCaps="false"
+        android:textColor="@color/eggshell"
+        android:background="@drawable/custom_button_main"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@id/ad_banner"
+        app:layout_constraintEnd_toStartOf="@+id/answer4Btn"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <Button
+        android:id="@+id/answer4Btn"
+        android:layout_width="160dp"
+        android:layout_height="90dp"
+        android:textAllCaps="false"
+        android:textColor="@color/eggshell"
+        android:background="@drawable/custom_button_main"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@id/ad_banner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/answer3Btn" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/error_msg"
+        android:visibility="invisible"
+        android:text="@string/network_error"
+        android:textSize="16sp"
+        android:textAllCaps="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+    
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ad_banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="[adUnitId]"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
